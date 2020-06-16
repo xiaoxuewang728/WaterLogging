@@ -32,7 +32,7 @@ class TrackWaterUnitView: UIView {
         headerLabel.font = UIFont.systemFont(ofSize: 20.0)
         headerLabel.numberOfLines = 0
         headerLabel.textAlignment = .center
-        contentLabel.font = UIFont.systemFont(ofSize: 30.0)
+        contentLabel.font = UIFont.systemFont(ofSize: 20.0)
         contentLabel.numberOfLines = 0
         contentLabel.textAlignment = .center
 

@@ -11,6 +11,9 @@
 		21595CEA2498A5DA00645FFE /* VisualizeWaterIntakePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21595CE92498A5DA00645FFE /* VisualizeWaterIntakePresenter.swift */; };
 		21595CEC2498A92F00645FFE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21595CEB2498A92F00645FFE /* CoreDataManager.swift */; };
 		21595CEE2498B27900645FFE /* TrackWaterUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21595CED2498B27900645FFE /* TrackWaterUnitView.swift */; };
+		21595CF22498C03700645FFE /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21595CF12498C03700645FFE /* HealthKit.framework */; };
+		21595CF42498C11E00645FFE /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21595CF32498C11D00645FFE /* HealthKitManager.swift */; };
+		21595CF72498C5D400645FFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21595CF62498C5D400645FFE /* Constants.swift */; };
 		B31AA1C824734EAB007708F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C724734EAB007708F4 /* AppDelegate.swift */; };
 		B31AA1CA24734EAB007708F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C924734EAB007708F4 /* SceneDelegate.swift */; };
 		B31AA1CF24734EAB007708F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31AA1CD24734EAB007708F4 /* Main.storyboard */; };
@@ -38,6 +41,10 @@
 		21595CE92498A5DA00645FFE /* VisualizeWaterIntakePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizeWaterIntakePresenter.swift; sourceTree = "<group>"; };
 		21595CEB2498A92F00645FFE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		21595CED2498B27900645FFE /* TrackWaterUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackWaterUnitView.swift; sourceTree = "<group>"; };
+		21595CEF2498C03600645FFE /* WaterLogging.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaterLogging.entitlements; sourceTree = "<group>"; };
+		21595CF12498C03700645FFE /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		21595CF32498C11D00645FFE /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		21595CF62498C5D400645FFE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B31AA1C424734EAB007708F4 /* WaterLogging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterLogging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31AA1C724734EAB007708F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B31AA1C924734EAB007708F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21595CF22498C03700645FFE /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +105,25 @@
 			children = (
 				B31AA1D024734EAB007708F4 /* WaterLogging.xcdatamodeld */,
 				21595CEB2498A92F00645FFE /* CoreDataManager.swift */,
+				21595CF32498C11D00645FFE /* HealthKitManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		21595CF02498C03700645FFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21595CF12498C03700645FFE /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21595CF52498C5BC00645FFE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				21595CF62498C5D400645FFE /* Constants.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		B31AA1BB24734EAA007708F4 = {
@@ -107,6 +132,7 @@
 				B31AA1C624734EAB007708F4 /* WaterLogging */,
 				B31AA1E024734EAC007708F4 /* WaterLoggingTests */,
 				B31AA1C524734EAB007708F4 /* Products */,
+				21595CF02498C03700645FFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +148,8 @@
 		B31AA1C624734EAB007708F4 /* WaterLogging */ = {
 			isa = PBXGroup;
 			children = (
+				21595CF52498C5BC00645FFE /* Helper */,
+				21595CEF2498C03600645FFE /* WaterLogging.entitlements */,
 				21595CE62498A57F00645FFE /* Model */,
 				21595CE52498A57500645FFE /* Presenter */,
 				21595CE42498A56800645FFE /* View */,
@@ -253,8 +281,10 @@
 				B31AA1C824734EAB007708F4 /* AppDelegate.swift in Sources */,
 				21595CE82498A5C900645FFE /* TrackWaterPresenter.swift in Sources */,
 				21595CEC2498A92F00645FFE /* CoreDataManager.swift in Sources */,
+				21595CF42498C11E00645FFE /* HealthKitManager.swift in Sources */,
 				B31AA1CA24734EAB007708F4 /* SceneDelegate.swift in Sources */,
 				B31AA1D224734EAB007708F4 /* WaterLogging.xcdatamodeld in Sources */,
+				21595CF72498C5D400645FFE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +444,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WaterLogging/WaterLogging.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRF2JEWKYX;
 				INFOPLIST_FILE = WaterLogging/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -432,7 +464,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WaterLogging/WaterLogging.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRF2JEWKYX;
 				INFOPLIST_FILE = WaterLogging/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,6 +486,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRF2JEWKYX;
 				INFOPLIST_FILE = WaterLoggingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,6 +508,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRF2JEWKYX;
 				INFOPLIST_FILE = WaterLoggingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
