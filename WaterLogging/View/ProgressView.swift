@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// source: https://github.com/MarcosiOSdev/DrinkingWater/blob/master/DrinkingWater/CounterView.swift
 class ProgressView: UIView {
 
     private struct Constants {
