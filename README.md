@@ -30,3 +30,5 @@ I created WaterLog {date, quantity} to log water intakes in CoreData as model/pe
 ### Notifications
 
 I use NotificationCenter to broadcast model changes, as multiple observers are listening to. (TrackWaterViewPresenter and VisualizeWaterIntakePresenter)
+
+#### Please set IPHONEOS_DEPLOYMENT_TARGET = 13.2 if you encounter any issue
