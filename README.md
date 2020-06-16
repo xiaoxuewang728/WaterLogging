@@ -25,6 +25,7 @@ I used MVP architecture pattern in this project to
 I created WaterLog {date, quantity} to log water intakes in CoreData as model/persistence layer, as it is 
 
 (1) easy to sum up to get total water intakes per day
+
 (2) extensible to support history-releted features, like visualizing a history of water intake on a day-to-day basis.
 
 ### Notifications
