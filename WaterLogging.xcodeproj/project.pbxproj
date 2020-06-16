@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		21595CE82498A5C900645FFE /* TrackWaterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21595CE72498A5C900645FFE /* TrackWaterPresenter.swift */; };
 		21595CEA2498A5DA00645FFE /* VisualizeWaterIntakePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21595CE92498A5DA00645FFE /* VisualizeWaterIntakePresenter.swift */; };
+		21595CEC2498A92F00645FFE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21595CEB2498A92F00645FFE /* CoreDataManager.swift */; };
 		B31AA1C824734EAB007708F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C724734EAB007708F4 /* AppDelegate.swift */; };
 		B31AA1CA24734EAB007708F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C924734EAB007708F4 /* SceneDelegate.swift */; };
 		B31AA1CF24734EAB007708F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31AA1CD24734EAB007708F4 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		21595CE72498A5C900645FFE /* TrackWaterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackWaterPresenter.swift; sourceTree = "<group>"; };
 		21595CE92498A5DA00645FFE /* VisualizeWaterIntakePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizeWaterIntakePresenter.swift; sourceTree = "<group>"; };
+		21595CEB2498A92F00645FFE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		B31AA1C424734EAB007708F4 /* WaterLogging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterLogging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31AA1C724734EAB007708F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B31AA1C924734EAB007708F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				B31AA1D024734EAB007708F4 /* WaterLogging.xcdatamodeld */,
+				21595CEB2498A92F00645FFE /* CoreDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				B31AA1F124734F10007708F4 /* AppTabBarController.swift in Sources */,
 				B31AA1C824734EAB007708F4 /* AppDelegate.swift in Sources */,
 				21595CE82498A5C900645FFE /* TrackWaterPresenter.swift in Sources */,
+				21595CEC2498A92F00645FFE /* CoreDataManager.swift in Sources */,
 				B31AA1CA24734EAB007708F4 /* SceneDelegate.swift in Sources */,
 				B31AA1D224734EAB007708F4 /* WaterLogging.xcdatamodeld in Sources */,
 			);
