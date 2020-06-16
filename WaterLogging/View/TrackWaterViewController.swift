@@ -6,7 +6,9 @@
 
 import UIKit
 
-protocol TrackWaterView: class {}
+protocol TrackWaterView: class {
+    func update(quantity: Double)
+}
 
 class TrackWaterViewController: UIViewController, TrackWaterView {
     
@@ -34,6 +36,7 @@ class TrackWaterViewController: UIViewController, TrackWaterView {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        presenter?.updateDataIfNeeded()
         dateLabel.text = Date().toString()
     }
 
@@ -141,14 +144,17 @@ class TrackWaterViewController: UIViewController, TrackWaterView {
     // Actions
     
     @objc private func addWaterButtonPressed() {
+        presenter?.intakeWater(quantity: 8.0)
         print("Add water button pressed")
     }
     
     @objc private func goalButtonPressed() {
         print("Goal button pressed")
     }
-    
 
+    func update(quantity: Double) {
+        quantityUnitView.updateContent(text: "\(quantity) oz")
+    }
 }
 
 extension Date {

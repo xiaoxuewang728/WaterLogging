@@ -16,7 +16,9 @@ class CoreDataManager {
 
     var quantityOfToday: Double = 0.0 {
         didSet {
-            // TODO: notify presenter
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "QuantityUpdated"),
+                                            object: quantityOfToday,
+                                            userInfo: nil)
         }
     }
 
