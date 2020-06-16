@@ -45,6 +45,7 @@ class VisualizeWaterIntakeViewController: UIViewController, VisualizeWaterIntake
     private func setUp() {
         trackingLabel.text = "0 oz of n/a oz goal consumed today"
         trackingLabel.textColor = .label
+        trackingLabel.numberOfLines = 0
         trackingLabel.textAlignment = .center
         view.backgroundColor = .systemBackground
         

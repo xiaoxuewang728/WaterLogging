@@ -23,6 +23,8 @@ class ProgressView: UIView {
             if percentage <= 1.0 {
                 setNeedsDisplay()
                 print(percentage)
+            } else {
+                percentage = 1.0
             }
         }
     }
