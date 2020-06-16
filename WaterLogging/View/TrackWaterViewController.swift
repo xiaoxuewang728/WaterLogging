@@ -6,8 +6,11 @@
 
 import UIKit
 
-class TrackWaterViewController: UIViewController {
+protocol TrackWaterView: class {}
+
+class TrackWaterViewController: UIViewController, TrackWaterView {
     
+    private var presenter: TrackWaterViewPresenter!
     private let addWaterButton = UIButton()
     private let updateGoalButton = UIButton()
     
@@ -20,6 +23,10 @@ class TrackWaterViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        presenter = TrackWaterPresenter(view: self)
+    }
     // Set Up
     
     private func setUp() {

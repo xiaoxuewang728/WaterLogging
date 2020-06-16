@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21595CE82498A5C900645FFE /* TrackWaterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21595CE72498A5C900645FFE /* TrackWaterPresenter.swift */; };
+		21595CEA2498A5DA00645FFE /* VisualizeWaterIntakePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21595CE92498A5DA00645FFE /* VisualizeWaterIntakePresenter.swift */; };
 		B31AA1C824734EAB007708F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C724734EAB007708F4 /* AppDelegate.swift */; };
 		B31AA1CA24734EAB007708F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C924734EAB007708F4 /* SceneDelegate.swift */; };
 		B31AA1CF24734EAB007708F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31AA1CD24734EAB007708F4 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21595CE72498A5C900645FFE /* TrackWaterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackWaterPresenter.swift; sourceTree = "<group>"; };
+		21595CE92498A5DA00645FFE /* VisualizeWaterIntakePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizeWaterIntakePresenter.swift; sourceTree = "<group>"; };
 		B31AA1C424734EAB007708F4 /* WaterLogging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterLogging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31AA1C724734EAB007708F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B31AA1C924734EAB007708F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21595CE42498A56800645FFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B31AA1EE24734EE8007708F4 /* VisualizeWaterIntakeViewController.swift */,
+				B31AA1EC24734EC7007708F4 /* TrackWaterViewController.swift */,
+				B31AA1F024734F10007708F4 /* AppTabBarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21595CE52498A57500645FFE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				21595CE72498A5C900645FFE /* TrackWaterPresenter.swift */,
+				21595CE92498A5DA00645FFE /* VisualizeWaterIntakePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		21595CE62498A57F00645FFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B31AA1D024734EAB007708F4 /* WaterLogging.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B31AA1BB24734EAA007708F4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,16 +116,15 @@
 		B31AA1C624734EAB007708F4 /* WaterLogging */ = {
 			isa = PBXGroup;
 			children = (
+				21595CE62498A57F00645FFE /* Model */,
+				21595CE52498A57500645FFE /* Presenter */,
+				21595CE42498A56800645FFE /* View */,
 				B31AA1C724734EAB007708F4 /* AppDelegate.swift */,
-				B31AA1F024734F10007708F4 /* AppTabBarController.swift */,
 				B31AA1C924734EAB007708F4 /* SceneDelegate.swift */,
-				B31AA1EC24734EC7007708F4 /* TrackWaterViewController.swift */,
-				B31AA1EE24734EE8007708F4 /* VisualizeWaterIntakeViewController.swift */,
 				B31AA1CD24734EAB007708F4 /* Main.storyboard */,
 				B31AA1D324734EAB007708F4 /* Assets.xcassets */,
 				B31AA1D524734EAB007708F4 /* LaunchScreen.storyboard */,
 				B31AA1D824734EAB007708F4 /* Info.plist */,
-				B31AA1D024734EAB007708F4 /* WaterLogging.xcdatamodeld */,
 			);
 			path = WaterLogging;
 			sourceTree = "<group>";
@@ -210,9 +240,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B31AA1ED24734EC7007708F4 /* TrackWaterViewController.swift in Sources */,
+				21595CEA2498A5DA00645FFE /* VisualizeWaterIntakePresenter.swift in Sources */,
 				B31AA1EF24734EE8007708F4 /* VisualizeWaterIntakeViewController.swift in Sources */,
 				B31AA1F124734F10007708F4 /* AppTabBarController.swift in Sources */,
 				B31AA1C824734EAB007708F4 /* AppDelegate.swift in Sources */,
+				21595CE82498A5C900645FFE /* TrackWaterPresenter.swift in Sources */,
 				B31AA1CA24734EAB007708F4 /* SceneDelegate.swift in Sources */,
 				B31AA1D224734EAB007708F4 /* WaterLogging.xcdatamodeld in Sources */,
 			);

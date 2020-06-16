@@ -6,8 +6,11 @@
 
 import UIKit
 
-class VisualizeWaterIntakeViewController: UIViewController {
+protocol VisualizeWaterIntakeView: class {}
 
+class VisualizeWaterIntakeViewController: UIViewController, VisualizeWaterIntakeView {
+
+    private var presenter: VisualizeWaterIntakeViewPresenter!
     private let trackingLabel = UILabel()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -21,7 +24,7 @@ class VisualizeWaterIntakeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        presenter = VisualizeWaterIntakePresenter(view: self)
     }
     
     // Set Up
