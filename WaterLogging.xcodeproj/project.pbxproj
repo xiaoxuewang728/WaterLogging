@@ -15,6 +15,7 @@
 		21595CF42498C11E00645FFE /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21595CF32498C11D00645FFE /* HealthKitManager.swift */; };
 		21595CF72498C5D400645FFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21595CF62498C5D400645FFE /* Constants.swift */; };
 		21595CF92498D0C300645FFE /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21595CF82498D0C300645FFE /* ProgressView.swift */; };
+		218740052498EC200063C340 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218740042498EC200063C340 /* Extensions.swift */; };
 		B31AA1C824734EAB007708F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C724734EAB007708F4 /* AppDelegate.swift */; };
 		B31AA1CA24734EAB007708F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C924734EAB007708F4 /* SceneDelegate.swift */; };
 		B31AA1CF24734EAB007708F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31AA1CD24734EAB007708F4 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		21595CF32498C11D00645FFE /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		21595CF62498C5D400645FFE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		21595CF82498D0C300645FFE /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		218740042498EC200063C340 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B31AA1C424734EAB007708F4 /* WaterLogging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterLogging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31AA1C724734EAB007708F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B31AA1C924734EAB007708F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				21595CF62498C5D400645FFE /* Constants.swift */,
+				218740042498EC200063C340 /* Extensions.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				B31AA1D224734EAB007708F4 /* WaterLogging.xcdatamodeld in Sources */,
 				21595CF72498C5D400645FFE /* Constants.swift in Sources */,
 				21595CF92498D0C300645FFE /* ProgressView.swift in Sources */,
+				218740052498EC200063C340 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

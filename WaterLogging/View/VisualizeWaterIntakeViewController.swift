@@ -121,12 +121,3 @@ class VisualizeWaterIntakeViewController: UIViewController, VisualizeWaterIntake
         percentageUnitView.updateContent(text: percentage.percentageString)
     }
 }
-
-extension Double {
-    var percentageString: String {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .percent
-        formatter.maximumFractionDigits = 1
-        return formatter.string(from: NSNumber(value: self)) ?? "0%"
-    }
-}
